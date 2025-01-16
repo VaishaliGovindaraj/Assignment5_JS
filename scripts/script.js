@@ -152,13 +152,14 @@ const loadPuzzle = () => {
     document.querySelector("#guessed_word").value = "";
 };
 
-let correctAnswers = 0; // Track correct answers
-let wrongAnswers = 0;   // Track wrong answers
-let puzzleTransitionInProgress = false; // Prevent multiple updates
+let correctAnswers = 0;
+let wrongAnswers = 0;   
+let puzzleTransitionInProgress = false; 
 
 let enterButton = document.querySelector(".enter_button");
 enterButton.addEventListener("click", () => {
-    if (puzzleTransitionInProgress) return; // Prevent actions during a transition
+
+    if (puzzleTransitionInProgress) return; 
 
     let wordInput = document.querySelector("#guessed_word");
     let userGuess = wordInput.value.toLowerCase();
@@ -168,9 +169,8 @@ enterButton.addEventListener("click", () => {
 
     currentAttempt++;
 
-    // Case 1: Correct answer
     if (userGuess === currentPuzzle.word) {
-        correctAnswers++; // Increment correct answers before transitioning
+        correctAnswers++; 
         console.log(`correct- ${correctAnswers}, wrong-${wrongAnswers}`);
         resultText.textContent = `Right Guess! ${remainingPuzzles} puzzles left.`;
 
@@ -178,7 +178,7 @@ enterButton.addEventListener("click", () => {
         enterButton.disabled = true;
 
         setTimeout(() => {
-            currentAttempt = 0; // Reset attempts for the next puzzle
+            currentAttempt = 0; 
             currentPuzzleIndex++;
             puzzleTransitionInProgress = false;
             enterButton.disabled = false;
@@ -188,14 +188,13 @@ enterButton.addEventListener("click", () => {
             } else {
                 console.log(`correct- ${correctAnswers}, wrong-${wrongAnswers}`);
                 resultText.textContent = `Game Over! Correct Guesses: ${correctAnswers}, Wrong Guesses: ${wrongAnswers}.`;
-                enterButton.disabled = true; // Disable Enter button
+                enterButton.disabled = true; 
                 scoreText.textContent = `Thanks for playing. Click on "Replay" button to play again`;
             }
         }, 1500);
 
-        // Case 2: Exceeded attempts
     } else if (currentAttempt >= 5) {
-        wrongAnswers++; // Increment wrong answers before transitioning
+        wrongAnswers++;
         console.log(`wrong: ${wrongAnswers}`)
         resultText.textContent = `Attempts exceeded! The correct answer was "${currentPuzzle.word}".`;
 
@@ -203,7 +202,7 @@ enterButton.addEventListener("click", () => {
         enterButton.disabled = true;
 
         setTimeout(() => {
-            currentAttempt = 0; // Reset attempts for the next puzzle
+            currentAttempt = 0; 
             currentPuzzleIndex++;
             puzzleTransitionInProgress = false;
             enterButton.disabled = false;
@@ -213,7 +212,7 @@ enterButton.addEventListener("click", () => {
             } else {
                 console.log(`correct- ${correctAnswers}, wrong-${wrongAnswers}`);
                 resultText.textContent = `Game Over! Correct Guesses: ${correctAnswers}, Wrong Guesses: ${wrongAnswers}.`;
-                enterButton.disabled = true; // Disable Enter button
+                enterButton.disabled = true; 
                 scoreText.textContent = `Thanks for playing. Click on "Replay" button to play again`;
             }
         }, 1500);
@@ -229,8 +228,8 @@ hintText.addEventListener("click", () => {
 
     if (currentPuzzleIndex >= puzzleArray.length) {
         resultText.textContent = "No more puzzles left. Click Replay to start again.";
-        hintText.disabled = true; // Disable Hint button
-        return; // Exit to avoid undefined access
+        hintText.disabled = true; 
+        return; 
     }
 
     const currentPuzzle = puzzleArray[currentPuzzleIndex];
@@ -247,8 +246,7 @@ hintText.addEventListener("click", () => {
 let replayButton = document.querySelector(".replay_button");
 replayButton.addEventListener("click", () => {
     resetGame();
-    enterButton.disabled = false; // Re-enable Enter button
-    hintText.disabled = false;
+    enterButton.disabled = false; 
 });
 
 loadPuzzle();

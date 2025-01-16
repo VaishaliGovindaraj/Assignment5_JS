@@ -79,30 +79,30 @@ h1{
 /* Neon Glow Animation */
 @keyframes neonGlow {
     0% {
-        box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+        box-shadow: 0 0 5px #ff00ff, 0 0 5px #ff00ff, 0 0 5px #ff00ff, 0 0 5px #ff00ff;
         background-color: #ed4ded;
     }
     25% {
-        box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+        box-shadow: 0 0 5px #00ffff, 0 0 5px #00ffff, 0 0 5px #00ffff, 0 0 5px #00ffff;
         background-color: #77e5e5;
     }
     50% {
-        box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+        box-shadow: 0 0 5px #00ff00, 0 0 5px #00ff00, 0 0 5px #00ff00, 0 0 5px #00ff00;
         background-color: #7de67d;
     }
     75% {
-        box-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00;
-        background-color: #ffff00;
+        box-shadow: 0 0 5px #ffff00, 0 0 5px #ffff00, 0 0 5px #ffff00, 0 0 5px #ffff00;
+        background-color: #f9f9a8;
     }
     100% {
-        box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+        box-shadow: 0 0 5px #ff00ff, 0 0 5px #ff00ff, 0 0 5px #ff00ff, 0 0 5px #ff00ff;
         background-color: #e672e6;
     }
 }
 
 /* Hover effect for the button */
 .start_game:hover {
-    box-shadow: 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
+    box-shadow: 0 0 5px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
     background-color: #ffffff;
     color: black;
 }
@@ -277,7 +277,7 @@ h1{
     background-color: #3B252C;
     color:#fff;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .start_game {
@@ -286,7 +286,7 @@ h1{
     background-color: #4a9aef;
     color: rgb(12, 12, 12);
     border: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     margin-left: 35%;
     font-size: rem;
     font-weight: bold;
@@ -301,30 +301,30 @@ h1{
 /* Neon Glow Animation */
 @keyframes neonGlow {
     0% {
-        box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+        box-shadow: 0 0 5px #ff00ff, 0 0 5px #ff00ff, 0 0 5px #ff00ff, 0 0 5px #ff00ff;
         background-color: #ed4ded;
     }
     25% {
-        box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+        box-shadow: 0 0 5px #00ffff, 0 0 5px #00ffff, 0 0 5px #00ffff, 0 0 5px #00ffff;
         background-color: #77e5e5;
     }
     50% {
-        box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+        box-shadow: 0 0 5px #00ff00, 0 0 5px #00ff00, 0 0 5px #00ff00, 0 0 5px #00ff00;
         background-color: #7de67d;
     }
     75% {
-        box-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00;
+        box-shadow: 0 0 5px #ffff00, 0 0 5px #ffff00, 0 0 5px #ffff00, 0 0 5px #ffff00;
         background-color: #ffff00;
     }
     100% {
-        box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+        box-shadow: 0 0 5px #ff00ff, 0 0 5px #ff00ff, 0 0 5px #ff00ff, 0 0 5px #ff00ff;
         background-color: #e672e6;
     }
 }
 
 /* Hover effect for the button */
 .start_game:hover {
-    box-shadow: 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
+    box-shadow: 0 0 5px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
     background-color: #ffffff;
     color: black;
 }
