@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Pic1Word</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+    
+    <div class="instructions-container">
+        <div id="instructions" class="instructions-content">
+            <h1 class="gameheader_title">4 PIC 1 WORD</h1>
+            <h3>How to Play</h3>
+            <ol>
+                <li><strong>Objective:</strong> Guess the word that connects the four images displayed.</li>
+                <li><strong>How to Play:</strong>
+                    <ul>
+                        <li>Look at the images carefully and think of a word that relates to all of them.</li>
+                        <li>Type your guess in the input box and click "Enter."</li>
+                    </ul>
+                </li>
+                <li><strong>Hints:</strong> Click the "Hint" button to see a clue</li>
+                <li><strong>Attempts:</strong> You have a maximum of <strong>5 attempts</strong> per puzzle.</li>
+                <li><strong>Empty Guess:</strong> Your  <strong> empty </strong> input will be treated as one of the attempt</li>
+                <li><strong>Scoring:</strong> Your correct and wrong answers will be tracked and displayed at the end.</li>
+                <li><strong>Replay:</strong> Click the "Replay" button to restart the game.</li>
+            </ol>
+            <button class="start_game">Start Game</button>
+        </div>
+    </div>
+
+    <div class="header">
+        <h2>4 PIC 1 WORD</h2>
+        <button class="replay_button">Replay</button> 
+        <div class="hint">
+            <button class="hint_button">Show Hint</button>
+            <div class="hint_message"></div>
+        </div>
+    </div>
+
+    <div class="image_content">
+        <div class="title">Guess the word from the images</div>
+        
+        <div class="image_section"></div>
+    </div>
+
+    <div class="word_guess">
+        <label for="guessed_word" class="label_text">Enter your Guess</label>
+        <input type="text" id="guessed_word" name="guessed_word" placeholder="Your Guess"><br>
+    </div>
+
+    <div class="result_message"></div>
+    <button class="enter_button">ENTER</button>
+    
+</body>
+
+</html>
