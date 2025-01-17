@@ -269,15 +269,14 @@ h1{
 .instructions-content {
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 20px auto;
-    padding: 15px;
+    margin: 16px auto;
+    padding: 8px;
     border: 1px solid #e6d8d8;
     border-radius: 5px;
     background-color: #3B252C;
     color:#fff;
     text-align: left;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .start_game {
@@ -286,19 +285,18 @@ h1{
     background-color: #4a9aef;
     color: rgb(12, 12, 12);
     border: none;
-    padding: 5px 20px;
+    padding: 8px;
     margin-left: 35%;
-    font-size: rem;
+    font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    animation: neonGlow 1.5s infinite; /* Multicolor neon glow animation */
+    animation: neonGlow 1.5s infinite; 
     width:30%;
 }
 
-/* Neon Glow Animation */
 @keyframes neonGlow {
     0% {
         box-shadow: 0 0 5px #ff00ff, 0 0 5px #ff00ff, 0 0 5px #ff00ff, 0 0 5px #ff00ff;
@@ -322,7 +320,6 @@ h1{
     }
 }
 
-/* Hover effect for the button */
 .start_game:hover {
     box-shadow: 0 0 5px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
     background-color: #ffffff;
