@@ -255,8 +255,8 @@ h1{
     text-align: center;
     display:flex;
     position:fixed;
-    height:100%;
-    width:100%;
+    min-height:100%;
+    min-width:100%;
     z-index: 10;
     background-color: aliceblue;
     color:black;
