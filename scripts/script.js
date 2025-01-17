@@ -191,7 +191,7 @@ enterButton.addEventListener("click", () => {
                 enterButton.disabled = true; 
                 scoreText.textContent = `Thanks for playing. Click on "Replay" button to play again`;
             }
-        }, 1500);
+        }, 2500);
 
     } else if (currentAttempt >= 5) {
         wrongAnswers++;
@@ -215,7 +215,7 @@ enterButton.addEventListener("click", () => {
                 enterButton.disabled = true; 
                 scoreText.textContent = `Thanks for playing. Click on "Replay" button to play again`;
             }
-        }, 1500);
+        }, 2500);
 
     } else {
         let attemptNumber = 5 - currentAttempt;
